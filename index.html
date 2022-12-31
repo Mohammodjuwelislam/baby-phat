@@ -135,60 +135,161 @@
 
         <!-- .slider-area-code-start  -->
         <div class="slider-area">
-            <div class="splide">
+            <div class="splide" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
-                      <ul class="splide__list">
-                          <li class="splide__slide"><img src="img/bg/slider-bg.jpg" alt=""></li>
-                          <li class="splide__slide"><img src="img/bg/slider-bg.jpg" alt=""></li>
-                      </ul>
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <div class="single-slider">
+                                <img src="img/bg/slider-bg.jpg" alt="">
+                            </div>  
+                        </div>
+                        <div class="splide__slide">
+                            <div class="single-slider">
+                                <img src="img/bg/slider-bg.jpg" alt="">
+                            </div> 
+                        </div> 
+                    </div>
                 </div>
-            </div>
+              </div>
         </div>
         <!-- .slider-area-code-end -->
 
 
         <!-- .product-area-code-start  -->
-        <div class="product-area pt-100 pb-100">
+        <div class="product-area pt-75 pb-60">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
-                        <div class="product-tabs text-center">
-                            <div class="tbs text-center">
-                                <ul class="nav" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">JUST IN</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    <div class="splide" id="first-slider" aria-label="Splide Basic HTML Example">
-                                        <div class="splide__track">
-                                          <ul class="splide__list">
-                                            <li class="splide__slide">
+                        <div class="product-tabs d-flex justify-content-center">
+                            <ul class="nav" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="just-in-tab" data-bs-toggle="tab" data-bs-target="#just-in" type="button" role="tab" aria-controls="just-in" aria-selected="true">JUST IN</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="trending-tab" data-bs-toggle="tab" data-bs-target="#trending" type="button" role="tab" aria-controls="trending" aria-selected="false">TRENDING</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="just-in" role="tabpanel" aria-labelledby="just-in-tab">
+                                <div class="splide" id="first-slider" aria-label="Splide Basic HTML Example">
+                                    <div class="splide__arrows">
+                                        <button class="splide__arrow splide__arrow--prev">
+                                            <img src="img/icon/arrow-left.svg" alt="">
+                                        </button>
+                                        <button class="splide__arrow splide__arrow--next">
+                                            <img src="img/icon/arrow-right.svg" alt="">
+                                        </button>
+                                    </div>    
+                                    <div class="splide__track">
+                                      <div class="splide__list">
+                                        <div class="splide__slide">
+                                            <div class="product-wrapper">
                                                 <div class="img-box">
                                                     <img src="img/product/product-1.png" alt="">
                                                 </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class="img-box">
-                                                    <img src="img/product/product-1.png" alt="">
+                                                <div class="product-text text-center">
+                                                    <h3>COZY KNIT UNISEX PULLOVER</h3>
+                                                    <span>$16</span>
                                                 </div>
-                                            </li>
-                                            <li class="splide__slide">
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="product-wrapper">
                                                 <div class="img-box">
-                                                    <img src="img/product/product-1.png" alt="">
+                                                    <img src="img/product/product-2.png" alt="">
                                                 </div>
-                                            </li>
-                                          </ul>
+                                                <div class="product-text text-center">
+                                                    <h3>COTTON JERSY STRING BIKINI</h3>
+                                                    <span>$20</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="product-wrapper">
+                                                <div class="img-box">
+                                                    <img src="img/product/product-3.png" alt="">
+                                                </div>
+                                                <div class="product-text text-center">
+                                                    <h3>COTTON RIB ONESIE</h3>
+                                                    <span>$78</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="product-wrapper">
+                                                <div class="img-box">
+                                                    <img src="img/product/product-4.png" alt="">
+                                                </div>
+                                                <div class="product-text text-center">
+                                                    <h3>COTTON JERSEY SCOOP BRALETTE</h3>
+                                                    <span>$78</span>
+                                                </div>
+                                            </div>
                                         </div>
                                       </div>
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                            </div>
+                            <div class="tab-pane fade" id="trending" role="tabpanel" aria-labelledby="trending-tab">
+                                <div class="splide" id="second-slider" aria-label="Splide Basic HTML Example">
+                                    <div class="splide__arrows">
+                                        <button class="splide__arrow splide__arrow--prev">
+                                            <img src="img/icon/arrow-left.svg" alt="">
+                                        </button>
+                                        <button class="splide__arrow splide__arrow--next">
+                                            <img src="img/icon/arrow-right.svg" alt="">
+                                        </button>
+                                    </div>    
+                                    <div class="splide__track">
+                                      <div class="splide__list">
+                                        <div class="splide__slide">
+                                            <div class="product-wrapper">
+                                                <div class="img-box">
+                                                    <img src="img/product/product-1.png" alt="">
+                                                </div>
+                                                <div class="product-text text-center">
+                                                    <h3>COZY KNIT UNISEX PULLOVER</h3>
+                                                    <span>$16</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="product-wrapper">
+                                                <div class="img-box">
+                                                    <img src="img/product/product-2.png" alt="">
+                                                </div>
+                                                <div class="product-text text-center">
+                                                    <h3>COTTON JERSY STRING BIKINI</h3>
+                                                    <span>$20</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="product-wrapper">
+                                                <div class="img-box">
+                                                    <img src="img/product/product-3.png" alt="">
+                                                </div>
+                                                <div class="product-text text-center">
+                                                    <h3>COTTON RIB ONESIE</h3>
+                                                    <span>$78</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="product-wrapper">
+                                                <div class="img-box">
+                                                    <img src="img/product/product-4.png" alt="">
+                                                </div>
+                                                <div class="product-text text-center">
+                                                    <h3>COTTON JERSEY SCOOP BRALETTE</h3>
+                                                    <span>$78</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -196,6 +297,130 @@
             </div>
         </div>
         <!-- .product-area-code-end -->
+
+
+        <!-- banner-area-code-start-->
+        <div class="banner-area banner-bg " style="background-image: url(img/bg/banner-bg.jpg);">
+            <div class="section-title banner-title">
+                <h2>3 PANTIES FOR $36</h2>
+                <p>Shop our best-selling styles at special pricing</p>
+                <a href="#" class="btns">SHOP NOW</a>
+            </div>
+        </div>
+        <!-- banner-area-code-end -->
+
+
+        <!-- features-callection-area-code-start  -->
+        <div class="features-callection-area pt-50 pb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title featurea-title-color">
+                        <h2>FEATURED COLLECTIONS</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/features/features-img-1.png" alt="">
+                            </div>
+                            <div class="features-content">
+                                <h3>THE HOLIDAY SHOP</h3>
+                                <p>The ultimate gifting destination for everyone on your list</p>
+                                <a href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/features/features-img-2.png" alt="">
+                            </div>
+                            <div class="features-content">
+                                <h3>BACK IN STOCK</h3>
+                                <p>Shop the lates restocks of our best-selling styles</p>
+                                <a href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/features/features-img-3.png" alt="">
+                            </div>
+                            <div class="features-content">
+                                <h3>THE LATEST DROPS</h3>
+                                <p>Get the latest in everything from intimates to loungewear</p>
+                                <a href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/features/features-img-4.png" alt="">
+                            </div>
+                            <div class="features-content">
+                                <h3>THE T-SHIRT SHOP</h3>
+                                <p>Your one-stop shop for signature t-shirts</p>
+                                <a href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-xl-6">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/features/features-img-5.png" alt="" class="features-img-2">
+                                <div class="section-title features-text">
+                                    <h2>GIFTS UNDER $100</h2>
+                                    <p>Small gifts big impact</p>
+                                    <a href="#" class="btns">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/features/features-img-6.png" alt="" class="features-img-2">
+                                <div class="section-title features-text">
+                                    <h2>GIFTS UNDER $200</h2>
+                                    <p>Celebrate them with special gifts</p>
+                                    <a href="#" class="btns">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="features-wrapper">
+                            <div class="features-thumb ">
+                                <img src="img/features/features-img-7.png" alt="" class="features-img-2">
+                                <div class="section-title features-text">
+                                    <h2>HOME FOR THE HOLIDAYS</h2>
+                                    <p>Classic matching sets for the whole family.</p>
+                                    <a href="#" class="btns">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/features/features-img-8.png" alt="" class="features-img-2">
+                                <div class="section-title features-text">
+                                    <h2>LUXE GIFTS</h2>
+                                    <p>Premium picks on every wishlist.</p>
+                                    <a href="#" class="btns">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- features-callection-area-code-end -->
 
 
 

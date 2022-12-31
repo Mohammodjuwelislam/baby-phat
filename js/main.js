@@ -51,9 +51,9 @@ splide.mount();
 
 //splide
 
-
+//first-slider
 new Splide("#first-slider", {
-	perPage: 3,
+	perPage: 4,
 	perMove: 1,
 	arrows:true,
 	pagination:true,
@@ -66,7 +66,29 @@ new Splide("#first-slider", {
 		  768: { perPage: 2 },
 		  400: { perPage: 1, padding: '20%' },
 	}
-  }).mount();
+}).mount();
+
+//second-slider
+new Splide("#second-slider", {
+	perPage:4,
+	perMove: 1,
+	arrows:true,
+	arrowPath: 'beak',
+	pagination:true, 
+	type: 'loop',
+	gap: '10px', 
+	padding: 0,
+	breakpoints: {
+		  1200: { perPage: 4 },
+		  960: { perPage: 3 },
+		  768: { perPage: 2 },
+		  400: { perPage: 1, padding: '20%' },
+	}
+}).mount();
+
+
+
+
 
 
 
