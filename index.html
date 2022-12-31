@@ -16,8 +16,10 @@
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css//nice-select.css">
         <link rel="stylesheet" href="css/t-star-font.css">
         <link rel="stylesheet" href="css/meanmenu.css">
+        <link rel="stylesheet" href="css/splide.min.css">
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/fontawesome.min.css">
         <link rel="stylesheet" href="css/slick.css">
@@ -48,7 +50,7 @@
                     <h2>INTERNATIONAL SHIIPING AVAILABLE</h2>
                 </div>
             </div>
-            <div class="header-bottom d-flex align-items-center">
+            <div class="header-bottom">
                 <div class="container pos">
                     <div class="row align-items-center">
                         <div class="col-xl-3">
@@ -113,10 +115,11 @@
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 d-flex align-items-center">
                             <div class="header-right">
                                 <ul>
-                                    <li><img src="img/icon/usa flag 1.svg" alt=""><a href="#"> USD</a></li>
+                                    <li><img src="img/icon/usa flag 1.svg" alt=""><select class="select"><option selected>usd</option><option value="1">lg</option></select>
+                                    </li>
                                     <li><a class="search-icon" href="#"><img src="img/icon/Search.svg" alt=""></a></li>
                                     <li><a href="#"><img src="img/icon/Profile.svg" alt=""></a></li>
                                     <li><a href="#"><img src="img/icon/shopping.svg" alt=""></a></li>
@@ -130,15 +133,84 @@
         <!-- header-area-code-end-->
 
 
+        <!-- .slider-area-code-start  -->
+        <div class="slider-area">
+            <div class="splide">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide"><img src="img/bg/slider-bg.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="img/bg/slider-bg.jpg" alt=""></li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+        <!-- .slider-area-code-end -->
+
+
+        <!-- .product-area-code-start  -->
+        <div class="product-area pt-100 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="product-tabs text-center">
+                            <div class="tbs text-center">
+                                <ul class="nav" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">JUST IN</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="splide" id="first-slider" aria-label="Splide Basic HTML Example">
+                                        <div class="splide__track">
+                                          <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <div class="img-box">
+                                                    <img src="img/product/product-1.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="img-box">
+                                                    <img src="img/product/product-1.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="img-box">
+                                                    <img src="img/product/product-1.png" alt="">
+                                                </div>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .product-area-code-end -->
+
+
+
+
+
 
 		<!-- JS here -->
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
+        <script src="js/splide.min.js"></script>
         <script src="js/isotope.pkgd.min.js"></script>
         <script src="js/one-page-nav-min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.meanmenu.min.js"></script>
         <script src="js/ajax-form.js"></script>

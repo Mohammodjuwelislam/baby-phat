@@ -34,6 +34,43 @@ $('.search-closs').on('click', function(){
 	$('.popup-search-box').removeClass('active')
 })
 
+// nice-select
+$('select').niceSelect();
+
+
+
+
+//splide-slider 
+var splide = new Splide( '.splide', {
+	arrows:false,
+	pagination:true,
+});
+splide.mount();
+
+
+
+//splide
+
+
+new Splide("#first-slider", {
+	perPage: 3,
+	perMove: 1,
+	arrows:true,
+	pagination:true,
+	type: 'loop',
+	gap: '30px', 
+	padding: 0,
+	breakpoints: {
+		  1200: { perPage: 4 },
+		  960: { perPage: 3 },
+		  768: { perPage: 2 },
+		  400: { perPage: 1, padding: '20%' },
+	}
+  }).mount();
+
+
+
+
 
 // mainSlider
 function mainSlider() {
@@ -76,10 +113,10 @@ function mainSlider() {
 mainSlider();
 
 
-// owlCarousel
-$('.owl-carousel').owlCarousel({
+// owlCarousel product-active
+$('.product-active').owlCarousel({
     loop:true,
-    margin:0,
+    margin:30,
 	items:1,
 	navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
     nav:true,
@@ -92,7 +129,7 @@ $('.owl-carousel').owlCarousel({
             items:3
         },
         992:{
-            items:5
+            items:3
         }
     }
 })
