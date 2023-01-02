@@ -44,6 +44,7 @@ $('select').niceSelect();
 var splide = new Splide( '.splide', {
 	arrows:false,
 	pagination:true,
+	drag:true,
 });
 splide.mount();
 
