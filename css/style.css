@@ -375,7 +375,7 @@ a img{
   
 /* header-area-css-code-start */
 
-#header-sticky.sticky{
+.header-area.sticky{
 	position: fixed;
 	top: -30px;
 	left: 0;
@@ -910,10 +910,6 @@ a img{
 }
 
 
-/* .features-img-2{
-	height: 628px;
-	width: 677px;
-} */
 .features-text{
 	position: absolute;
 	bottom: 40px;

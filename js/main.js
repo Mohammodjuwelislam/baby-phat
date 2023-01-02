@@ -18,9 +18,9 @@ $('.main-menu nav ul').onePageNav({
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
 	if (scroll < 245) {
-		$("#header-sticky").removeClass("sticky");
+		$(".header-area").removeClass("sticky");
 	} else {
-		$("#header-sticky").addClass("sticky");
+		$(".header-area").addClass("sticky");
 	}
 });
 
