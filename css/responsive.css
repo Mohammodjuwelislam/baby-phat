@@ -31,7 +31,7 @@
         margin-left: -45px;
     }
     .splide__arrow--next {
-        margin-right: -55px;
+        margin-right: -45px;
     }
 
     .footer-padding {
@@ -75,9 +75,6 @@
         line-height: 27px;
     }
 
-    /* .single-slider img {
-        max-width: 100%;
-    } */
 
 
     .header-bottom {
@@ -87,11 +84,11 @@
     .product-tabs ul > li {
         padding: 0 0px;
         padding-bottom: 30px;
-    }
+    } 
 
     .product-tabs ul li button {
         font-size: 18px;
-    }
+    } 
 
     .slider-title {
         top: 60%;
@@ -121,6 +118,14 @@
 
     .footer-form form input {
         width: 276px;
+    }
+
+    .features-text {
+        left: 6px;
+    }
+
+    .shop-title h2 {
+        margin-left: 0;
     }
 
 }

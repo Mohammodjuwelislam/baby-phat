@@ -26,11 +26,12 @@ $(window).on('scroll', function () {
 
 
 
+
 $('.search-icon').on('click', function(){
 	$('.popup-search-box').addClass('active')
 })
 
-$('.search-closs').on('click', function(){
+$('.searchClose').on('click', function(){
 	$('.popup-search-box').removeClass('active')
 })
 
@@ -59,7 +60,7 @@ new Splide("#first-slider", {
 	arrows:true,
 	pagination:false,
 	type: 'loop',
-	gap: '10px', 
+	gap: '8px', 
 	padding: 0,
 	breakpoints: {
 		  1200: { perPage: 4 },
@@ -78,7 +79,7 @@ new Splide("#second-slider", {
 	arrowPath: 'beak',
 	pagination:false, 
 	type: 'loop',
-	gap: '10px', 
+	gap: '8px', 
 	padding: 0,
 	breakpoints: {
 		  1200: { perPage: 4 },
@@ -98,7 +99,7 @@ new Splide("#three-slider", {
 	arrowPath: 'beak',
 	pagination:false, 
 	type: 'loop',
-	gap: '10px', 
+	gap: '8px', 
 	padding: 0,
 	breakpoints: {
 		  1200: { perPage: 4 },
