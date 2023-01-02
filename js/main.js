@@ -18,9 +18,9 @@ $('.main-menu nav ul').onePageNav({
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
 	if (scroll < 245) {
-		$(".header-sticky").removeClass("sticky");
+		$("#header-sticky").removeClass("sticky");
 	} else {
-		$(".header-sticky").addClass("sticky");
+		$("#header-sticky").addClass("sticky");
 	}
 });
 
@@ -51,30 +51,12 @@ splide.mount();
 
 //splide
 
-//first-slider
+//first-slider first
 new Splide("#first-slider", {
 	perPage: 4,
 	perMove: 1,
 	arrows:true,
-	pagination:true,
-	type: 'loop',
-	gap: '30px', 
-	padding: 0,
-	breakpoints: {
-		  1200: { perPage: 4 },
-		  960: { perPage: 3 },
-		  768: { perPage: 2 },
-		  400: { perPage: 1, padding: '20%' },
-	}
-}).mount();
-
-//second-slider
-new Splide("#second-slider", {
-	perPage:4,
-	perMove: 1,
-	arrows:true,
-	arrowPath: 'beak',
-	pagination:true, 
+	pagination:false,
 	type: 'loop',
 	gap: '10px', 
 	padding: 0,
@@ -82,7 +64,47 @@ new Splide("#second-slider", {
 		  1200: { perPage: 4 },
 		  960: { perPage: 3 },
 		  768: { perPage: 2 },
-		  400: { perPage: 1, padding: '20%' },
+		  400: { perPage: 1, //padding: '20%' 
+		},
+	}
+}).mount();
+
+//second-slider second
+new Splide("#second-slider", {
+	perPage:4,
+	perMove: 1,
+	arrows:true,
+	arrowPath: 'beak',
+	pagination:false, 
+	type: 'loop',
+	gap: '10px', 
+	padding: 0,
+	breakpoints: {
+		  1200: { perPage: 4 },
+		  960: { perPage: 3 },
+		  768: { perPage: 2 },
+		  400: { perPage: 1, //padding: '20%' 
+		},
+	}
+}).mount();
+
+
+//second-slider three
+new Splide("#three-slider", {
+	perPage:4,
+	perMove: 1,
+	arrows:true,
+	arrowPath: 'beak',
+	pagination:false, 
+	type: 'loop',
+	gap: '10px', 
+	padding: 0,
+	breakpoints: {
+		  1200: { perPage: 4 },
+		  960: { perPage: 3 },
+		  768: { perPage: 2 },
+		  400: { perPage: 1, //padding: '20%' 
+		},
 	}
 }).mount();
 
@@ -208,7 +230,7 @@ $.scrollUp({
 	animation: 'fade', // Fade, slide, none
 	animationInSpeed: 200, // Animation in speed (ms)
 	animationOutSpeed: 200, // Animation out speed (ms)
-	scrollText: '<i class="icofont icofont-long-arrow-up"></i>', // Text for element
+	scrollText: '<i class="fa-solid fa-upload"></i>', // Text for element
 	activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
 });
 

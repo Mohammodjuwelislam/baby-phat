@@ -44,7 +44,7 @@
 
 
         <!-- header-area-code-start  -->
-        <header class="header-area">
+        <header class="header-area" id="header-sticky">
             <div class="header-top">
                 <div class="header-top-text">
                     <h2>INTERNATIONAL SHIIPING AVAILABLE</h2>
@@ -53,12 +53,13 @@
             <div class="header-bottom">
                 <div class="container pos">
                     <div class="row align-items-center">
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 col-lg-2 col-md-4 col-sm-5 col-4">
                             <div class="logo">
-                                <a href="#"><img src="img/logo/Logo 1.svg" alt=""></a>
+                                <a href="#" class="d-none d-lg-block"><img src="img/logo/Logo 1.svg" alt=""></a>
+                                <a href="#" class="d-lg-none"><img src="img/logo/Logo 2.svg" alt=""></a>
                             </div>
                         </div>
-                        <div class="col-xl-6">
+                        <div class="col-xl-6 col-lg-7 d-none d-lg-block">
                             <div class="main-menu">
                                 <nav>
                                     <ul>
@@ -115,16 +116,58 @@
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-xl-3 d-flex align-items-center">
-                            <div class="header-right">
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-7 d-flex align-items-center">
+                            <div class="header-right d-none d-lg-block">
                                 <ul>
                                     <li><img src="img/icon/usa flag 1.svg" alt=""><select class="select"><option selected>usd</option><option value="1">lg</option></select>
                                     </li>
-                                    <li><a class="search-icon" href="#"><img src="img/icon/Search.svg" alt=""></a></li>
+                                    <li><a class="search-icon" href="#" ><img src="img/icon/Search.svg" alt=""></a></li>
                                     <li><a href="#"><img src="img/icon/Profile.svg" alt=""></a></li>
                                     <li><a href="#"><img src="img/icon/shopping.svg" alt=""></a></li>
                                 </ul>
                             </div>
+                            <div class="header-search-box d-lg-none">
+                                <div class="search-box">
+                                    <a class="search-icon" href="#"><img src="img/icon/Search-1.svg" alt=""></a>
+                                    <button type="submit">search</button>
+                                </div>
+                                <div class="shopping-box">
+                                    <a href="#"><img src="img/icon/Shopping-1.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-area d-lg-none">
+                        <div class="row">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li><a href="#">ALL <img src="img/icon/arrow-down.svg" alt=""></a>
+                                            <ul class="submanu">
+                                                <li><a href="#">ACCESSORIES</a></li>
+                                                <li><a href="#">SHIRTS</a></li>
+                                                <li><a href="#">OUTEWEAR</a></li>
+                                                <li><a href="#">BOTTOMS</a></li>
+                                                <li><a href="#">COLLABORATIONS </a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">ACCESSORIES</a></li>
+                                        <li><a href="#">SHIRTS</a></li>
+                                        <li><a href="#">OUTEWEAR</a></li>
+                                        <li><a href="#">BOTTOMS</a></li>
+                                        <li><a href="#">COLLABORATIONS <img src="img/icon/arrow-down.svg" alt=""></a>
+                                            <ul class="submanu">
+                                                <li><a href="#">ACCESSORIES</a></li>
+                                                <li><a href="#">SHIRTS</a></li>
+                                                <li><a href="#">OUTEWEAR</a></li>
+                                                <li><a href="#">BOTTOMS</a></li>
+                                                <li><a href="#">COLLABORATIONS </a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="mobile-menu"></div>
                         </div>
                     </div>
                 </div>
@@ -140,13 +183,25 @@
                     <div class="splide__list">
                         <div class="splide__slide">
                             <div class="single-slider">
-                                <img src="img/bg/slider-bg.jpg" alt="">
+                                <img src="img/bg/slider-bg.jpg" alt="" class="d-none d-sm-block">
+                                <img src="img/bg/slider-bg-1.png" alt="" class="d-sm-none">
                             </div>  
+                            <div class="slider-title">
+                                <h2>33 PANTIES FOR $36</h2>
+                                <p>Shop our best-selling styles at special pricing</p>
+                                <a href="#" class="btns">SHOP NOW</a>
+                            </div>
                         </div>
                         <div class="splide__slide">
                             <div class="single-slider">
-                                <img src="img/bg/slider-bg.jpg" alt="">
+                                <img src="img/bg/slider-bg.jpg" alt="" class="d-none d-sm-block">
+                                <img src="img/bg/slider-bg-1.png" alt="" class="d-sm-none">
                             </div> 
+                            <div class="slider-title">
+                                <h2>3 PANTIES FOR $36</h2>
+                                <p>Shop our best-selling styles at special pricing</p>
+                                <a href="#" class="btns">SHOP NOW</a>
+                            </div>
                         </div> 
                     </div>
                 </div>
@@ -300,11 +355,13 @@
 
 
         <!-- banner-area-code-start-->
-        <div class="banner-area banner-bg " style="background-image: url(img/bg/banner-bg.jpg);">
-            <div class="section-title banner-title">
-                <h2>3 PANTIES FOR $36</h2>
-                <p>Shop our best-selling styles at special pricing</p>
-                <a href="#" class="btns">SHOP NOW</a>
+        <div class="banner-area d-none d-md-block">
+            <div class="banner-bg" style="background-image: url(img/bg/banner-bg.jpg);">
+                <div class="section-title banner-title">
+                    <h2>3 PANTIES FOR $36</h2>
+                    <p>Shop our best-selling styles at special pricing</p>
+                    <a href="#" class="btns">SHOP NOW</a>
+                </div>
             </div>
         </div>
         <!-- banner-area-code-end -->
@@ -312,14 +369,52 @@
 
         <!-- features-callection-area-code-start  -->
         <div class="features-callection-area pt-50 pb-50">
-            <div class="container">
+            <div class="container-fluid">
+                <div class="row d-md-none">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="features-wrapper mb-30">
+                            <div class="features-thumb">
+                                <img src="img/features/features-img-5.png" alt="" class="features-img-2">
+                                <div class="section-title features-text">
+                                    <h2>THE HOLIDAY SHOP</h2>
+                                    <p>The ultimate gifting destination for everyone on your list</p>
+                                    <a href="#" class="btns">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="features-wrapper mb-30">
+                            <div class="features-thumb">
+                                <img src="img/features/features-img-6.png" alt="" class="features-img-2">
+                                <div class="section-title features-text">
+                                    <h2>BACK IN STOCK</h2>
+                                    <p>Shop the lates restocks of our best-selling styles</p>
+                                    <a href="#" class="btns">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="features-wrapper mb-30">
+                            <div class="features-thumb ">
+                                <img src="img/features/features-img-7.png" alt="" class="features-img-2">
+                                <div class="section-title features-text">
+                                    <h2>THE HOLIDAY SHOP</h2>
+                                    <p>The ultimate gifting destination for everyone on your list</p>
+                                    <a href="#" class="btns">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="section-title featurea-title-color">
+                    <div class="section-top-title">
                         <h2>FEATURED COLLECTIONS</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6">
                         <div class="features-wrapper">
                             <div class="features-thumb">
                                 <img src="img/features/features-img-1.png" alt="">
@@ -331,7 +426,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6">
                         <div class="features-wrapper">
                             <div class="features-thumb">
                                 <img src="img/features/features-img-2.png" alt="">
@@ -343,7 +438,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 d-none d-lg-block">
                         <div class="features-wrapper">
                             <div class="features-thumb">
                                 <img src="img/features/features-img-3.png" alt="">
@@ -355,7 +450,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-6 d-none d-lg-block">
                         <div class="features-wrapper">
                             <div class="features-thumb">
                                 <img src="img/features/features-img-4.png" alt="">
@@ -369,10 +464,10 @@
                     </div>
                 </div>
                 <div class="row gy-3">
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-6 ">
                         <div class="features-wrapper">
                             <div class="features-thumb">
-                                <img src="img/features/features-img-5.png" alt="" class="features-img-2">
+                                <img src="img/features/features-part-1.png" alt="" class="features-img-2">
                                 <div class="section-title features-text">
                                     <h2>GIFTS UNDER $100</h2>
                                     <p>Small gifts big impact</p>
@@ -381,10 +476,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-6">
                         <div class="features-wrapper">
                             <div class="features-thumb">
-                                <img src="img/features/features-img-6.png" alt="" class="features-img-2">
+                                <img src="img/features/features-part-2.png" alt="" class="features-img-2">
                                 <div class="section-title features-text">
                                     <h2>GIFTS UNDER $200</h2>
                                     <p>Celebrate them with special gifts</p>
@@ -393,7 +488,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-6 d-none d-md-block">
                         <div class="features-wrapper">
                             <div class="features-thumb ">
                                 <img src="img/features/features-img-7.png" alt="" class="features-img-2">
@@ -405,7 +500,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-6 d-none d-md-block">
                         <div class="features-wrapper">
                             <div class="features-thumb">
                                 <img src="img/features/features-img-8.png" alt="" class="features-img-2">
@@ -421,6 +516,421 @@
             </div>
         </div>
         <!-- features-callection-area-code-end -->
+
+
+        <!-- our-customer-area-code-start  -->
+        <div class="our-customer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="section-top-title text-center mb-20">
+                        <h2>OUR CUSTOMERS SAY... </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/our-customer/our-customer-1.png" alt="" class="d-none d-md-block">
+                                <img src="img/our-customer/our-customer-part-1.png" alt="" class="d-md-none img-2">
+                            </div>
+                            <div class="features-content">
+                                <div class="features-rating">
+                                    <span>Ilona</span>
+                                    <img src="img/icon/star.svg" alt="">
+                                    <img src="img/icon/star.svg" alt="">
+                                    <img src="img/icon/star.svg" alt="">
+                                    <img src="img/icon/star.svg" alt="">
+                                </div>
+                                <span>“I love this pullover so much. It’s perfect for the winter!”</span>
+                                <a href="#" class="our-btn">SHOP THIS STYLE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/our-customer/our-customer-2.png" alt="" class="d-none d-md-block">
+                                <img src="img/features/features-img-4.png" alt="" class="d-md-none img-2">
+                            </div>
+                            <div class="features-content">
+                                <div class="features-rating">
+                                    <span>Jeraly</span>
+                                    <img src="img/icon/star.svg" alt="">
+                                    <img src="img/icon/star.svg" alt="">
+                                    <img src="img/icon/star.svg" alt="">
+                                    <img src="img/icon/star.svg" alt="">
+                                </div>
+                                <span>“So comfortable and can wear anywhere and everywhere”</span>
+                                <a href="#" class="our-btn">SHOP THIS STYLE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 d-none d-md-block">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/our-customer/our-customer-4.png" alt="">
+                            </div>
+                            <div class="features-content">
+                                <div class="features-rating">
+                                    <span>Valerie</span>
+                                    <img src="img/icon/star.svg" alt="">
+                                    <img src="img/icon/star.svg" alt="">
+                                    <img src="img/icon/star.svg" alt="">
+                                    <img src="img/icon/star.svg" alt="">
+                                </div>
+                                <span>“Super camfortable and incredibly flattering”</span>
+                                <a href="#" class="our-btn">SHOP THIS STYLE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 d-none d-md-block">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/our-customer/our-customer-3.png" alt="">
+                            </div>
+                            <div class="features-content">
+                                <div class="features-rating">
+                                    <span>Deanna</span>
+                                    <img src="img/icon/star.svg" alt="">
+                                    <img src="img/icon/star.svg" alt="">
+                                    <img src="img/icon/star.svg" alt="">
+                                    <img src="img/icon/star.svg" alt="">
+                                </div>
+                                <span>“100% worth the hype! Hugs you in all the right places and accentuates your curves.”</span>
+                                <a href="#" class="our-btn">SHOP THIS STYLE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- our-customer-area-code-end -->
+
+
+
+        <!-- our-callection-area-code-start  -->
+        <div class="our-callection-area pt-70 fix">
+            <div class="container-fluid p-3 p-xl-0 p-lg-0 p-md-0">
+                <div class="row">
+                    <div class="section-top-title mb-20 text-center our-callection-title">
+                        <h2>BELIEVE THE HYPE <br>
+                            OUR COLLECTIONS HAVE OVER 26,000 FIVE STAR <br>
+                            REVIEWS, AND COUNTING! </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/our-callection/our-callection-1.png" alt="">
+                            </div>
+                            <div class="features-content text-center">
+                                <a href="#">BRAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/our-callection/our-callection-2.png" alt="">
+                            </div>
+                            <div class="features-content text-center">
+                                <a href="#">PANTIES</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/our-callection/our-callection-3.png" alt="">
+                            </div>
+                            <div class="features-content text-center">
+                                <a href="#">LOUNGEWEAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="features-wrapper">
+                            <div class="features-thumb">
+                                <img src="img/our-callection/our-callection-4.png" alt="">
+                            </div>
+                            <div class="features-content text-center">
+                                <a href="#">SOCKS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- our-callection-area-code-end -->
+
+
+
+
+        <!-- .product-area-code-start  -->
+        <div class="product-area pt-75 pb-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="product-tabs d-flex justify-content-center">
+                            <ul class="nav" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="for-you-tab" data-bs-toggle="tab" data-bs-target="#for-you" type="button" role="tab" aria-controls="for-you" aria-selected="true">FOR YOU</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="for-you" role="tabpanel" aria-labelledby="for-you-tab">
+                                <div class="splide" id="three-slider" aria-label="Splide Basic HTML Example">
+                                    <div class="splide__arrows">
+                                        <button class="splide__arrow splide__arrow--prev">
+                                            <img src="img/icon/arrow-left.svg" alt="">
+                                        </button>
+                                        <button class="splide__arrow splide__arrow--next">
+                                            <img src="img/icon/arrow-right.svg" alt="">
+                                        </button>
+                                    </div>    
+                                    <div class="splide__track">
+                                      <div class="splide__list">
+                                        <div class="splide__slide">
+                                            <div class="product-wrapper">
+                                                <div class="img-box">
+                                                    <img src="img/product/product-img-5.png" alt="">
+                                                </div>
+                                                <div class="product-text text-center">
+                                                    <h3>COZY KNIT UNISEX PULLOVER</h3>
+                                                    <span>$16</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="product-wrapper">
+                                                <div class="img-box">
+                                                    <img src="img/product/product-img-6.png" alt="">
+                                                </div>
+                                                <div class="product-text text-center">
+                                                    <h3>COTTON JERSY STRING BIKINI</h3>
+                                                    <span>$20</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="product-wrapper">
+                                                <div class="img-box">
+                                                    <img src="img/product/product-img-7.png" alt="">
+                                                </div>
+                                                <div class="product-text text-center">
+                                                    <h3>COTTON RIB ONESIE</h3>
+                                                    <span>$78</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="product-wrapper">
+                                                <div class="img-box">
+                                                    <img src="img/product/product-img-8.png" alt="">
+                                                </div>
+                                                <div class="product-text text-center">
+                                                    <h3>COTTON JERSEY SCOOP BRALETTE</h3>
+                                                    <span>$78</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .product-area-code-end -->
+
+
+
+        <!-- .shop-feed-area-code-start -->
+        <div class="shop-feed-area pt-30 fix">
+            <div class="container">
+                <div class="row">
+                    <div class="shop-title">
+                        <h2>SHOP THE FEED</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-2 d-none d-md-block">
+                        <div class="shop-content mb-30">
+                            <div class="shop-thumb">
+                                <a href="#"><img src="img/shop/image 1.png" alt=""></a>
+                                <div class="shop-icon">
+                                    <a href="#"><img src="img/icon/shop-icon.svg" alt=""></a>
+                                </div>
+                                <div class="shop-text">
+                                    <a href="#">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-none d-md-block">
+                        <div class="shop-content mb-30">
+                            <div class="shop-thumb">
+                                <a href="#"><img src="img/shop/image 2.png" alt=""></a>
+                                <div class="shop-icon">
+                                    <a href="#"><img src="img/icon/shop-icon.svg" alt=""></a>
+                                </div>
+                                <div class="shop-text">
+                                    <a href="#">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-none d-md-block">
+                        <div class="shop-content mb-30">
+                            <div class="shop-thumb">
+                                <a href="#"><img src="img/shop/image 3.png" alt=""></a>
+                                <div class="shop-icon">
+                                    <a href="#"><img src="img/icon/shop-icon.svg" alt=""></a>
+                                </div>
+                                <div class="shop-text">
+                                    <a href="#">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class="shop-content mb-30">
+                            <div class="shop-thumb">
+                                <a href="#"><img src="img/shop/image 4.png" alt=""></a>
+                                <div class="shop-icon">
+                                    <a href="#"><img src="img/icon/shop-icon.svg" alt=""></a>
+                                </div>
+                                <div class="shop-text">
+                                    <a href="#">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-none d-md-block">
+                        <div class="shop-content mb-30">
+                            <div class="shop-thumb">
+                                <a href="#"><img src="img/shop/image 5.png" alt=""></a>
+                                <div class="shop-icon">
+                                    <a href="#"><img src="img/icon/shop-icon.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="shop-text">
+                                <a href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="section-top-title mb-30 text-center shop-top-title">
+                        <h2>SKIMS IS A SOLUTIONS ORIENTED BRAND CREATING THE <br> 
+                            NEXT GENERATION OF UNDERWEAR, LOUNGEWEAR AND <br> 
+                            SHAPEWEAR. 
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .shop-feed-area-code-end-->
+
+
+        <!-- footer-area-code-start  -->
+        <footer class="pt-70 pb-50" style="background: #000000;">
+            <div class="footer-top-area pb-30">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 d-none d-md-block">
+                            <div class="footer-widget text-center mb-20">
+                                <h3>HELP</h3>
+                                <ul class="footer-list">
+                                    <li><a href="#">return policy</a></li>
+                                    <li><a href="#">start a return</a></li>
+                                    <li><a href="#">track order</a></li>
+                                    <li><a href="#">size guides</a></li>
+                                    <li><a href="#">bra calculator</a></li>
+                                    <li><a href="#">ordering</a></li>
+                                    <li><a href="#">shipping</a></li>
+                                    <li><a href="#">international</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="footer-widget text-center footer-padding">
+                                <h3>STAY IN THE KNOW</h3>
+                                <p>Be the first one to receive new releases, special <br>
+                                     offers, and more</p>
+                                <div class="footer-form">
+                                    <form action="#">
+                                        <input type="email" placeholder="your email">
+                                        <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                    </form>
+                                </div>
+                                <div class="footer-text">
+                                    <p>By signing up you agree to receive recurring automated marketing message from SKIMS. View Terms & Privacy</p>
+                                    <h4>Text <span>SKIMS</span> to <span>68805</span> to never miss a drop!</h4>
+                                    <p>By signing up via text, you agree to receive recurring automated promotional and personalized marketing text messages (e.g. cart reminders) from SKIMS at the cell number used when signing up. Consent is not a condition of any purchase. Reply HELP for help and STOP to cancel. Msg frequency varies. Msg & data rates may apply. View Terms & Privacy.
+                                    </p>
+                                </div>
+                                <div class="footer-icon">
+                                    <a href="#"><img src="img/icon/icon-1.svg" alt=""></a>
+                                    <a href="#"><img src="img/icon/icon-2.svg" alt=""></a>
+                                    <a href="#"><img src="img/icon/icon-3.svg" alt=""></a>
+                                    <a href="#"><img src="img/icon/icon-4.svg" alt=""></a>
+                                    <a href="#"><img src="img/icon/icon-5.svg" alt=""></a>
+                                    <a href="#"><img src="img/icon/icon-6.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 d-none d-md-block">
+                            <div class="footer-widget text-center mb-20">
+                                <h3>MORE</h3>
+                                <ul class="footer-list">
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">influencers</a></li>
+                                    <li><a href="#">stockists</a></li>
+                                    <li><a href="#">resources</a></li>
+                                    <li><a href="#">contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-border  pt-20 pb-20">
+                        <div class="row align-items-center">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-4">
+                                <div class="footer-select">
+                                    <img src="img/icon/usa flag 1.svg" alt="">
+                                    <select class="footer-select-menu">
+                                        <option value="1">USD</option>
+                                        <option value="1">LG</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-8">
+                                <div class="footer-menu float-md-end">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#">Acessibility</a></li>
+                                            <li><a href="#">Privacy</a></li>
+                                            <li><a href="#">Terms</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-code-end -->
 
 
 

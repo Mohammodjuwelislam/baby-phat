@@ -1,6 +1,12 @@
 /* Normal desktop :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
 
+    .footer-padding {
+        padding: 0 115px;
+    }
+    .main-menu ul li {
+        margin-right: 17px;
+    }
 
 }
 
@@ -8,21 +14,116 @@
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
 
+    .main-menu ul li {
+        margin-right: 15px;
 
+    }
+
+    .header-right ul li a {
+        margin: 0 9px;
+    }
+
+    .single-slider img{
+        max-width: 100%;
+    }
+
+    .splide__arrow--prev {
+        margin-left: -45px;
+    }
+    .splide__arrow--next {
+        margin-right: -55px;
+    }
+
+    .footer-padding {
+        padding: 0 50px;
+    }
 }
 
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
 
+    .shop-top-title h2 {
+        font-size: 21px;
+    }
 
+    .footer-padding {
+        padding: 0;
+    }
+    .header-bottom {
+        background: #fff;
+    }
 }
 
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
 
- 
+    .splide__arrow--prev {
+        margin-left: -10px;
+    }
+    .splide__arrow--next {
+        margin-right: -10px;
+    }
+    .footer-padding {
+        padding: 0;
+    }
+
+
+    .shop-top-title h2 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    /* .single-slider img {
+        max-width: 100%;
+    } */
+
+
+    .header-bottom {
+        background: #fff;
+    }
+
+    .product-tabs ul > li {
+        padding: 0 0px;
+        padding-bottom: 30px;
+    }
+
+    .product-tabs ul li button {
+        font-size: 22px;
+
+    }
+
+    .slider-title {
+        top: 60%;
+    }
+
+    .footer-menu ul li {
+        display: inline-block;
+        margin-right: 18px;
+    }
+
+    .our-callection-title h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .popup-search-form form button {
+        width: 140px;
+    }
+
+    .popup-search-form form input {
+        width: 260px;
+    }
+
+    .header-top-text h2 {
+        font-size: 15px;
+    }
+
+    .footer-form form input {
+        width: 276px;
+    }
+
 }
  
 /* Large Mobile :480px. */
